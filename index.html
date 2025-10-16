@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tytuł</title>
+    <script src="https://wi.arturk.pl/zen-style.js.php?styles[]=style-1&styles[]=style-2" defer></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('headerHamburgerMenu');
+        const menu = document.getElementById('headerMenu');
+
+        hamburger.addEventListener('click', function() {
+            menu.classList.toggle('mobile-active');
+        });
+
+        // Optional: Hide menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+                menu.classList.remove('mobile-active');
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+    <header>
+        <div id="headerText">
+            Name
+        </div>
+        <div id="headerMenu">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+        </div>
+        <div id="headerHamburgerMenu"></div>
+    </header>
+        <div class="leftSectionWrapper">
+            <div class="left-section">
+                <h1>Welcome to Our Site</h1>
+                <button id="contactUsButton">
+                    Contact Us
+                </button>
+            </div>
+            <img id="peoplesImg" src="peoples.jpg" alt="People">
+            <img id="welcomeImg" src="welcome.gif" alt="Welcome">
+        </div>
+        <div id="divWrapper">
+            <div id="d1" class="textSections">
+                <h2>
+                    First subtitle
+
+                    <h3>First h3</h3>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sollicitudin, erat vel mattis finibus, metus lacus ornare neque.
+                    Phasellus vel vulputate arcu. Cras hendrerit imperdiet elit, non lacinia lacus. Pellentesque ullamcorper aliquam velit non consectetur.
+                    Sed pretium lacinia vestibulum. Etiam in felis eget dui commodo interdum id et sapien. Cras vel vehicula lorem. Donec ut felis pellentesque. 
+                    
+                    <ul>
+                        <li>element 1</li>
+                        <li>element 2</li>
+                    </ul>
+                    <h3>Second h3</h3>
+                    
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ullamcorper felis. Vivamus et neque iaculis mauris viverra malesuada blandit sit amet nunc.
+                    Praesent nibh nulla, sollicitudin id venenatis at, porta eu massa. In molestie turpis ac libero pellentesque accumsan. Sed ac ipsum auctor, efficitur sem at.
+                    Nam euismod auctor ex eget sollicitudin. Cras pellentesque eros a urna aliquet faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                </h2>
+            </div>
+
+            <div id="d2" class="textSections">
+                <h2>
+                    Second subtitle
+
+                    <h3>Third h3</h3>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac justo elit. Duis ipsum magna, porttitor sit amet euismod a, maximus ac nulla.
+                    Pellentesque tincidunt volutpat blandit. Proin fringilla velit non volutpat facilisis. Praesent erat ipsum, hendrerit ut auctor at, pulvinar a quam.
+                    Quisque tempor pharetra felis, id dapibus justo ullamcorper ac. Phasellus sollicitudin ultricies odio eget varius. Aliquam dapibus imperdiet mauris.
+
+                    <h3>Fourth h3</h3>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor, tortor vel ornare accumsan, erat purus congue velit, in interdum magna.
+                    Proin rutrum libero leo, ut efficitur lorem tincidunt eu. Vestibulum vitae tincidunt sapien. Nulla eget quam a eros fringilla pretium. Phasellus.
+                    Nullam pulvinar leo ut nisl cursus, at ullamcorper odio dictum. Etiam ligula turpis, luctus eu porttitor nec, mattis id libero. Etiam a ultrices.
+                </h2>
+            </div>
+
+            <div id="d3" class="textSections">
+                <h2>
+                    Third subtitle
+
+                    <h3>Fifth h3</h3>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus, magna at scelerisque luctus, erat velit rutrum diam, id luctus felis sapien.
+                    Sed venenatis blandit ligula eu imperdiet. Cras non mi lectus. Aenean vestibulum faucibus vehicula. Praesent hendrerit congue sapien quis maximus.
+                    Duis accumsan risus ultricies, rutrum quam non, aliquet lorem. Nam hendrerit massa eget viverra vestibulum. In eget ligula vulputate metus imperdiet feugiat.
+                    Integer metus elit, efficitur quis condimentum nec, rhoncus vel lacus. Nunc sodales quam et mauris ornare egestas. Fusce pulvinar rutrum dui, id fermentum nisl ultricies a.
+                    <br><br><br>
+                    Sed efficitur, massa ultrices sollicitudin ultrices, orci dui vehicula lectus, in finibus nulla massa non elit. Mauris consectetur nisi sem, a fringilla neque auctor a. 
+                    Nam maximus dignissim neque a imperdiet. Curabitur molestie id enim ut tincidunt. Sed ultricies lorem et pellentesque aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    Pellentesque at faucibus ante, at tempus velit. Nam non elit vestibulum, sagittis metus id, molestie orci. Donec nec faucibus diam. Phasellus congue nulla vitae sagittis sodales. Etiam in pellentesque quam. Phasellus laoreet urna mauris, vel vehicula ligula tincidunt in.
+                    Maecenas placerat rutrum turpis, a feugiat felis elementum at. Nulla sed porta purus. Suspendisse vel nulla venenatis, pharetra metus quis, convallis tortor. Maecenas tristique erat est, vel sagittis est vulputate et. Curabitur pretium mi nec neque mattis finibus. 
+                </h2>
+            </div>
+        </div>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>
